@@ -1,0 +1,130 @@
+body {
+  background-color: #2e2d5f;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  margin: 5% auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.login-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.document-viewer {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.document-viewer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.signature-box {
+  border: 2px dashed #6f42c1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #fff;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.signature-box:hover {
+  border-style: solid;
+  box-shadow: 0 0 15px #6f42c1;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-btn {
+  border: 1px solid #6f42c1;
+  color: #6f42c1;
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+.link-custom {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.link-custom:hover {
+  color: #6f42c1;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.document-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Botões do Google e Windows sem contorno nem fundo, sem hover */
+.btn-outline-secondary {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-outline-secondary img {
+  filter: none; /* Garante que a imagem não tenha nenhum filtro aplicado */
+}
+
+/* Removendo efeito hover */
+.btn-outline-secondary:hover {
+  background-color: transparent;
+  border: none;
+}
